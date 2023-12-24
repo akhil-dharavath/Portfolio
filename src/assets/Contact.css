@@ -1,0 +1,150 @@
+.form {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  margin: 100px auto !important;
+  width: 100%;
+  max-width: 900px;
+  flex-direction: row-reverse;
+}
+
+.form .left {
+  width: 50%;
+  padding: 30px;
+  margin-top: 8%;
+}
+.form .left div{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 50px;
+}
+
+.form .left div p{
+  margin: auto 0px;
+}
+
+.form .right {
+  width: 50%;
+  margin: 50px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.form .right input,
+.form .right textarea {
+  padding: 5px 10px;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid black !important;
+  background-color: white !important;
+  font-size: 18px !important;
+  transition: all 0.3s linear;
+}
+
+.form .right input:focus,
+.form .right textarea:focus,
+.form .right input:hover,
+.form .right textarea:hover {
+  outline: 1px solid rgb(7, 138, 158);
+  border: 1px solid rgb(7, 138, 158) !important;
+  border-radius: 6px;
+}
+
+.form .right button {
+  background-color: rgb(7, 138, 158);
+  outline: none;
+  border: none;
+  border-radius: 0px;
+  padding: 10px 0px !important;
+  margin-top: 10px;
+  transition: all 0.3s linear;
+}
+
+.form .right button:hover {
+  background-color: rgb(5, 111, 128);
+}
+
+.contact-heading{
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.contact_big{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 992.5px) {
+.form .left {
+  padding: 30px;
+}
+
+.form .right {
+  margin: 30px 15px;
+  padding: 20px;
+}
+}
+
+@media (max-width: 768px) {
+.form {
+  flex-wrap: wrap;
+  margin: 20px 0px !important;
+  background-color: white;
+}
+
+.contact-heading{
+  display: block;
+}
+
+.contact_big{
+  display: none;
+}
+
+.form .left {
+  margin-top: 0px;
+  width: 95%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form .left div{
+  margin: 0px;
+  justify-content: center;
+  width: 50%;
+}
+
+.form .right {
+  width: 95%;
+  margin: 0px 15px;
+  padding: 0px 20px;
+}
+}
+
+@media (max-width: 600px) {
+.form .left {
+  margin-top: 15px;
+  width: 95%;
+}
+
+.form .right {
+  width: 95%;
+  margin: 0px 10px;
+}
+
+.form .right input,
+.form .right textarea {
+  margin: 5px auto;
+  font-size: 16px !important;
+  padding: 5px;
+}
+
+.form .left div{
+  width: 100%;
+}
+}

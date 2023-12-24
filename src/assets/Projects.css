@@ -1,0 +1,156 @@
+.projects {
+  width: 100%;
+  max-width: 900px;
+  margin: 200px auto;
+  padding: 0px 25px;
+}
+
+.projects > h1 {
+  font-size: 18px;
+  color: rgb(3, 103, 190);
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.projects > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projects .img,
+.no_demo {
+  width: 55%;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+.no_demo{
+  background: url('./images/no_demo.jpg');
+  position: relative;
+  height: 250px;
+}
+
+.no_demo::after{
+  content: "Demo Unavailable";
+  background: rgba(0,0,0,0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-size: 40px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.projects .img video {
+  border-radius: 15px;
+  height: auto;
+}
+
+.projects .right,
+.projects .left {
+  display: flex;
+  align-items: center;
+  margin-top: 65px !important;
+}
+
+.projects .right {
+  flex-direction: row-reverse;
+}
+
+.projects .right .desc {
+  margin-left: 0%;
+  margin-right: 5%;
+}
+
+.projects .desc {
+  width: 40%;
+  margin-left: 5%;
+}
+
+.projects .desc .heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.projects .techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.projects .tech {
+  font-weight: bold;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.projects .gitAndLive {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects .git {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.projects .git p {
+  margin: auto;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    text-align: center;
+    margin: 0px auto;
+  }
+  
+  .projects .left,
+  .projects .right {
+    flex-direction: column !important;
+    margin-top: 40px !important;
+  }
+  
+  .projects .left .img,
+  .projects .right .img,
+  .projects .desc,
+  .no_demo {
+    width: 95%;
+    max-width: 400px;
+    border-radius: 10px !important;
+  }
+  
+  .projects .desc {
+    padding: 0px 5px;
+  }
+  
+  .projects .desc .heading {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: #0087ca;
+  }
+  .projects .img video,
+  .no_demo, .no_demo::after{
+  border-radius: 10px !important;
+}
+}
+
+@media (max-width: 576px) {
+  .no_demo{
+    height: 200px;
+  }
+
+  .no_demo::after{
+    font-size: 25px;
+  }
+}

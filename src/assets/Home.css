@@ -1,0 +1,94 @@
+.home {
+  width: 100%;
+  max-width: 800px;
+  margin: 200px auto;
+  height: 250px;
+  padding: 0px 25px;
+}
+
+.image-and-role {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.role {
+  margin: auto;
+}
+
+.image-and-role img {
+  width: 200px;
+  border: 2px solid black;
+  margin-left: 5vw !important;
+}
+
+.tech-stack {
+  display: flex;
+  margin-top: 70px;
+  height: 60px;
+}
+
+.tech-stack p {
+  font-size: 18px;
+  font-weight: bold;
+  border-right: 2px solid gray;
+  padding-right: 20px;
+  margin: auto 0px;
+  margin-right: 40px;
+}
+
+.tech-stack .logos {
+  display: flex;
+}
+
+.tech-stack .logos img {
+  height: 50px;
+  margin: auto 10px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  .tech-stack {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tech-stack p {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    border: 0px;
+    color: rgb(3, 103, 190);
+    text-align: center;
+  }
+
+  .tech-stack .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tech-stack .logos img {
+    margin: 10px;
+  }
+
+  .image-and-role {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .role {
+    text-align: center;
+    padding: 0px 30px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    margin-bottom: 100px;
+  }
+}
