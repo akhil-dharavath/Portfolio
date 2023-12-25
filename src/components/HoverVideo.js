@@ -28,6 +28,8 @@ const HoverVideo = ({ videoSrc }) => {
         ref={videoRef}
         height="300"
         muted
+        loop
+        // controls
         style={{
           filter: isHovered ? "brightness(95%)" : "none",
           width: "100%"

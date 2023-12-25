@@ -2,10 +2,10 @@ import React from "react";
 import "../assets/Projects.css";
 import ProjectCard from "../components/ProjectCard";
 import about from "../assets/images/about.png";
-import shopEZee from "../assets/images/shopEZee.mov";
-import weather from "../assets/images/weather.mov";
-import inotebook from "../assets/images/inotebook.mov";
-import news from "../assets/images/news.mov";
+import shopEZee from "../assets/images/shopEZee.mp4";
+import weather from "../assets/images/weather.mp4";
+import inotebook from "../assets/images/inotebook.mp4";
+import news from "../assets/images/news.mp4";
 
 const Projects = () => {
   return (
