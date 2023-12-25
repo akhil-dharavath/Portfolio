@@ -20,6 +20,31 @@
   width: 200px;
   border: 2px solid black;
   margin-left: 5vw !important;
+  animation: borderStyle 8s infinite;
+  border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+}
+
+@keyframes borderStyle {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+  }
+
+  20% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+  }
+
+  40% {
+    border-radius: 90%;
+  }
+
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
 }
 
 .tech-stack {

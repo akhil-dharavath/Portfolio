@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/Home.css";
-import profile from "../assets/images/profile.jpg";
+import profile from "../assets/images/profile.png";
 import html from "../assets/images/html_logo.png";
 import css from "../assets/images/css_logo.svg";
 import javaScript from "../assets/images/js_logo.png";
