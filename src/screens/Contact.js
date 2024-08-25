@@ -47,10 +47,10 @@ const ContactForm = () => {
       <div className="left">
       <h1 className="contact_big">GET IN TOUCH</h1>
         <div>
-          <IconButton href="https://github.com/akhildgithub" target='_blank'>
+          <IconButton href="https://github.com/akhil-dharavath" target='_blank'>
             <GitHubIcon sx={{ color: "#2b3137" }} />
           </IconButton>
-          <p>akhildgithub</p>
+          <p>akhil-dharavath</p>
         </div>
         <div>
           <IconButton href="https://www.linkedin.com/in/dharavath-akhil/" target='_blank'>
