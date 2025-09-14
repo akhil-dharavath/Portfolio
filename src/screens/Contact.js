@@ -71,10 +71,10 @@ const ContactForm = () => {
           <p>akhil.dharavath.7</p>
         </div>
         <div>
-          <IconButton href="mailto:akhildharavathofficial@gmail.com" target='_blank'>
+          <IconButton href="mailto:akhildharavath1999@gmail.com" target='_blank'>
             <EmailIcon sx={{ color: "#964b00" }} />
           </IconButton>
-          <p>akhildharavathofficial@gmail.com</p>
+          <p>akhildharavath1999@gmail.com</p>
         </div>
       </div>
     </div>
